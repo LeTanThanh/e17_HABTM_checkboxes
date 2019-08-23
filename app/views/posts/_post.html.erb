@@ -3,7 +3,7 @@
     <%= post.title %>
   </div>
   <div class="panel-body">
-    <%= post.body %>
+    <%= post.body.first(500) + " ..." %> <%= link_to "Read more", post %>
   </div>
   <div class="panel-footer">
     Tags: <%= render partial: "post_tag", collection: post.tags, as: :tag %>
