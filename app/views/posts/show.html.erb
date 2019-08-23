@@ -1,0 +1,15 @@
+<div class="container">
+  <h2><%= @post.title %></h2>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <%= @post.title %>
+    </div>
+    <div class="panel-body">
+      <%= @post.body %>
+    </div>
+    <div class="panel-footer">
+      Tags: <%= render partial: "post_tag", collection: @post.tags, as: :tag %>
+    </div>
+  </div>
+</div>
