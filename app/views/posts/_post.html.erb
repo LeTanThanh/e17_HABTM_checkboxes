@@ -1,6 +1,6 @@
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <%= post.title %>
+    <%= link_to post.title, edit_post_path(post), style: "color: white; text-decoration: none;" %>
   </div>
   <div class="panel-body">
     <%= post.body.first(500) + " ..." %> <%= link_to "Read more", post %>
