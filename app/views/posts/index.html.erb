@@ -1,5 +1,6 @@
 <div class="container">
   <h2>Posts</h2>
+  <p>Read yout post or <%= link_to "Create post", new_post_path %></p>
 
   <%= render partial: "post", collection: @posts %>
 
